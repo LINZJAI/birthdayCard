@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>送给黄幸杏的礼物</title>
+<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/css3.css">
+<link rel="stylesheet" type="text/css" href="css/weather.css">
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+<style type="text/css">
+  .spinner {
+  width: 20vw;
+  height: 20vw;
+  background-color: #67CF22;
+ 
+  margin: 45vh auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+ 
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(30vw) }
+  50% { -webkit-transform: perspective(30vw) rotateY(180deg) }
+  100% { -webkit-transform: perspective(30vw) rotateY(180deg)  rotateX(180deg) }
+}
+ 
+@keyframes rotateplane {
+  0% {
+    transform: perspective(30vw) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(30vw) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(30vw) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(30vw) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(30vw) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(30vw) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+</style>
+	</head>
+<body>
+<div id="music">
+	<img src="images/music_pointer.png">
+	<img class="play" id="muc" src="images/music_disc.png">
+</div>
+<div id="fullpage">
+  <div class="section section1">
+  <div id="loada" style=" 
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 100;
+  position: absolute;"
+><p style="
+text-align: center;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: 35vh auto;
+font-size: 8vw;
+">礼物打开中...</p>
+<div class="spinner"></div>
+</div>
+  	<div class="page1">
+  	   <img class="qiqiu" src="images/qiqiu.png">
+  	   <img class="yun-1" src="images/yun-1.png">
+  	   <img class="yun-2" src="images/yun-2.png">
+  	   <img class="shu" src="images/shu.png">
+  	   <p>开启礼物</p>
+  	   <img class="down" src="images/down.png">
+
+  	</div>
+  </div>
+  <div class="section section2">
+     <div class="page2">
+     	<img src="images/bg-2-top.png">
+     	<img id="page2wz" class="bbbplay" src="images/bg-2-wz.png">
+     	<img class="bg-2-bottom" src="images/bg-2-bottom.png">
+     	<div class="aaa " id="aaa"><img class="p2-but" src="images/p2-but.png"></div>
+     	<div class="mes-bg" id="mes-bg"></div>
+     	<div class="mes-con" id="mes-con">
+     		<img src="images/close.png" class="close" id="close">
+     		<img src="images/mes-1.png">
+     	</div>
+     </div>
+  </div>
+  <div class="section section3">
+  	<div class="page-3">
+  	<div style="height:1px;"></div>
+  		<div class="p3-1" id="p3-1">
+  		   <img src="images/p3-but.png" >
+  		   <img src="images/p3-1.png">
+  		   <img src="images/p3-2.png">
+  		   <img src="images/p3-3.png" id="p3-but">
+  		</div>
+  		<div class="p3-2" id="p3-2">
+  			<div class="snow-con">
+  			    <div class="weather snow"></div>
+  			</div>
+  			<div class="p3wz-con">
+  				<img src="images/pg3-wz1.png" id="pg3-wz1">
+  				<img src="images/pg3-wz2.png" id="pg3-wz2">
+  				<img src="images/close-p3.png" id="close-p3">
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <div class="section section4">
+    <div class="page-4">
+      <div class="p4-1">
+        <div class="squ-space">
+          <div class="squ-con" id="con-0">
+          <div class="con-1" id="con-1">
+            <div class="con-2" id="con-2">
+              <div class="squ" id="squ-1"></div>
+              <div class="squ" id="squ-2"></div>
+              <div class="squ" id="squ-3"></div>
+              <div class="squ" id="squ-4"></div>
+              <div class="squ" id="squ-5"></div>
+              <div class="squ" id="squ-6"></div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="p4-2" id="p4-but">
+        
+      </div>
+    </div>
+  </div>
+   <div class="section section5">
+     <div class="page-5">
+     <div class="stars-con" id="stars">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">   
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png">
+        <img src="images/stars.png"> 
+        <img src="images/stars.png">
+     </div>
+     <div class="start-1">
+       <img src="images/stars.png">
+     </div>
+     <div class="start-2">
+       <img src="images/stars.png">
+     </div>
+     <div class="start-3">
+       <img src="images/stars.png">
+     </div>
+     <div class="start-4">
+       <img src="images/stars.png">
+     </div>
+     <div class="start-5">
+       <img src="images/stars.png">
+     </div>
+     <div class="no-no">
+     <img src="images/girl-1.png">
+     <img src="images/girl-2.png">
+     <img src="images/girl-3.png">
+     <img src="images/girl-4.png">
+     <img src="images/girl-5.png">
+     <img src="images/girl-6.png">
+     </div>
+       <div class="p5-p" id="girl"></div>
+     </div>
+   </div>
+</div>
+
+<audio autoplay="true" loop="loop">
+	<source src="aduio/bg-music.mp3" type="audio/mpeg">
+</audio>	
+<script type="text/javascript">
+var t;
+var aaa = document.getElementById('aaa');
+var page2wz = document.getElementById('page2wz');
+var girl = document.getElementById('girl');
+var stars = document.getElementById('stars');
+function page2(){
+   aaa.setAttribute('class','aaa aaaplay');
+   page2wz.setAttribute('class','bbbplay');
+}
+function page2left(){
+   aaa.setAttribute('class','aaa');
+   page2wz.setAttribute('class','');
+
+}
+function page5(){
+  girl.setAttribute('class','p5-p p5-pplay');
+    setTimeout(function() {
+   stars.style.display = "block";
+}, 3000)
+  
+};
+function page5left(){
+  girl.setAttribute('class','p5-p');
+
+  stars.style.display = "none";
+};
+	$(document).ready(function(){
+		$("#fullpage").fullpage({
+			sectionsColor:['#6ac0bd','white','red','orange'],
+			css3:true,
+			loopBottom:true,//paddingTop,paddingBottom
+			fixedElements:'#music',
+			afterLoad:function(link,index){
+				switch(index){
+					case 1:
+					     break;
+					case 2: page2();
+					     
+					     break;
+					case 3:
+					     break;
+					case 4:
+					     break;
+          case 5: page5();
+               break;
+				}
+			},
+
+            onLeave:function(link,index){
+				switch(index){
+					case 1:
+					     break;
+					case 2: page2left();
+					     break;
+					case 3:
+					     break;
+					case 4:
+					     break;
+          case 5: page5left();
+               break;
+				}
+			},
+		});
+	});
+</script>
+<script type="text/javascript" src="js/myjs.js"></script>	
+</body>
+</html>	
